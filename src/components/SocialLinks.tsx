@@ -5,27 +5,27 @@ export function SocialLinks() {
   return (
     <div className="flex gap-4 items-center">
       <a
-        href="https://twitter.com/bellwether"
+        href="https://twitter.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 hover:bg-kawaii-blue/20 rounded-full transition-colors"
+        className="p-2 hover:bg-accent/20 rounded-full transition-colors"
       >
-        <Twitter className="text-kawaii-blue" />
+        <Twitter className="text-primary" />
       </a>
       <a
-        href="https://t.me/bellwether"
+        href="https://t.me/"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 hover:bg-kawaii-purple/20 rounded-full transition-colors"
+        className="p-2 hover:bg-accent/20 rounded-full transition-colors"
       >
-        <MessageCircle className="text-kawaii-purple" />
+        <MessageCircle className="text-primary" />
       </a>
       <a
         href="#"
-        className="p-2 hover:bg-kawaii-pink/20 rounded-full transition-colors"
+        className="p-2 hover:bg-accent/20 rounded-full transition-colors"
         onClick={() => navigator.clipboard.writeText('0x1234...5678')}
       >
-        <Wallet className="text-kawaii-pink" />
+        <Wallet className="text-primary" />
       </a>
     </div>
   );

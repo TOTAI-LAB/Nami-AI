@@ -4,12 +4,16 @@ import { SocialLinks } from './components/SocialLinks';
 import { Features } from './components/Features';
 
 // Import the local images
-import aiCharacter1 from './assets/images/nami.png';
-import aiCharacter2 from './assets/images/nami-1.png';
-import aiCharacter3 from './assets/images/nami-2.png';
-import aiCharacter4 from './assets/images/nami-3.png';
-import aiCharacter5 from './assets/images/nami-4.png';
-import aiCharacter6 from './assets/images/nami-5.png';
+import aiCharacter1 from './assets/images/luffy-1.jpeg';
+import aiCharacter2 from './assets/images/luffy-2.jpeg';
+import aiCharacter3 from './assets/images/luffy-3.jpeg';
+import aiCharacter4 from './assets/images/luffy-4.jpeg';
+import aiCharacter5 from './assets/images/luffy-5.jpeg';
+import aiCharacter6 from './assets/images/luffy-6.jpeg';
+import aiCharacter7 from './assets/images/luffy-7.jpeg';
+import aiCharacter8 from './assets/images/luffy-8.jpeg';
+import aiCharacter9 from './assets/images/luffy-9.jpeg';
+import aiCharacter10 from './assets/images/luffy-10.jpeg';
 
 export function App() {
   const [currentImage, setCurrentImage] = useState(aiCharacter1);
@@ -17,7 +21,7 @@ export function App() {
 
   useEffect(() => {
     // Set interval to change image every 5 seconds
-    const images = [aiCharacter1, aiCharacter2, aiCharacter3, aiCharacter4, aiCharacter5, aiCharacter6];
+    const images = [aiCharacter1, aiCharacter2, aiCharacter3, aiCharacter4, aiCharacter5, aiCharacter6, aiCharacter7, aiCharacter8, aiCharacter9, aiCharacter10];
     let index = 0;
 
     const interval = setInterval(() => {
@@ -52,7 +56,7 @@ export function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100">
+    <div className="min-h-screen bg-gradient-to-b from-gradientFrom to-gradientTo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="min-h-screen flex flex-col">
           <main className="flex-1">
@@ -66,22 +70,22 @@ export function App() {
                     alt="AI Assistant"
                     className="w-full h-auto rounded-lg shadow-2xl animate-float"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pink-100/50 to-transparent rounded-lg" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent rounded-lg" />
                 </div>
 
                 {/* Right side - Chat Interface */}
                 <div className="space-y-8">
                   <div>
-                    <h1 className="text-4xl font-bold text-pink-600 sm:text-5xl">
-                    Welcome to the Grand Line of Riches!
+                    <h1 className="text-4xl font-bold text-primary sm:text-5xl">
+                      Yo-ho-ho! Anchors aweigh! Let’s claim Bitcoin’s ultimate treasure!
                     </h1>
-                    <p className="mt-4 text-xl text-pink-500">
-                    With me, Nami, by your side, you’re just one map away from the next big score!
+                    <p className="mt-4 text-xl text-primary">
+                      With me, Captain Luffy, leading the charge, we’re sailing straight to the greatest crypto treasure ever—Bitcoin’s One Piece! Forget the altcoin circus. On this ship, it’s Bitcoin or nothing!
                     </p>
                   </div>
 
                   <ChatInterface />
-                  
+
                   <div className="flex justify-center">
                     <SocialLinks />
                   </div>
